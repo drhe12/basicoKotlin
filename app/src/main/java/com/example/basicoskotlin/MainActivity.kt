@@ -47,7 +47,15 @@ class MainActivity : AppCompatActivity() {
 
         // Decimales (Float, Double)
         val myFloat: Float = 12.1f
+        val myDouble: Double = 15.20
+        val myDouble2 = 10.5
+        val sumaDouble = myDouble + myDouble2
+        println(sumaDouble)
 
         // Boolean
+        val verdad = true
+        val falso: Boolean = false
+        println(verdad == falso)
+        println(verdad && falso)
     }
 }
