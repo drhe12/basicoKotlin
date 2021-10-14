@@ -10,7 +10,9 @@ class MainActivity : AppCompatActivity() {
 
         // variablesYConstantes()
         // tiposDeDatos()
-        condicionalWhen()
+        // condicionalWhen()
+        // arreglos()
+        bucles()
         // tarea2()
     }
     private fun variablesYConstantes() {
@@ -84,6 +86,56 @@ class MainActivity : AppCompatActivity() {
             in "i".."m" -> println("intermedias")
             else -> println("últimas")
         }
+    }
+
+    fun arreglos() {
+        val name = "Deryam"
+        val surname = "Hermosilla"
+        val company = "drhe12"
+        val age = "25"
+
+        // Creación de un Array
+        val myArray = arrayListOf<String>()
+
+        // Añadir datos a un Array
+        myArray.add(name)
+        myArray.add(surname)
+        myArray.add(company)
+        myArray.add(age)
+        println(myArray)
+
+        // Añadir un conjunto de datos
+        myArray.addAll(listOf("Hola", "everis", "bootcamp"))
+        println(myArray)
+
+        // Acceso a datos
+        val myAge = myArray[2]
+        println(myAge)
+
+        // Modificar datos
+        myArray[6] = "bootcamp mobile"
+        println(myArray)
+
+        // Eliminar datos
+        myArray.removeAt(4)
+        println(myArray)
+
+        // Recorrer datos
+        myArray.forEach {
+            println(it)
+        }
+
+        // Otras operaciones
+        println(myArray.count())
+
+        println(myArray.first())
+        println(myArray.last())
+        myArray.clear()
+        println(myArray.count())
+    }
+
+    fun bucles() {
+        
     }
 
     // fun List<Int>.promedio(): Double = this.average()
